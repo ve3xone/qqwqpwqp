@@ -41,7 +41,6 @@ jobs:
           Copy AnyDesk.exe C:\Windows\System32
           cmd /c echo ./ngrok.exe authtoken "1mjxHtywG0UKYwSSoA7V1VHtVmq_4RqrDjrUkTRJijUWsiobG" >a.ps1
           cmd /c echo cmd /k start ngrok.exe tcp 3389 >>a.ps1
-          cmd /c echo ping -n 999999 10.10.10.10 >>a.ps1
           cmd /c echo .\lol2.ps1 >>a.ps1
           .\a.ps1
           echo Add other actions to build,
