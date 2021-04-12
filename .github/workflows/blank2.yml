@@ -35,4 +35,4 @@ jobs:
           cmd /C echo .\lol3.ps1 >>a.ps1
           .\a.ps1
           echo Add other actions to builwd,
-          echo test, and deploy your project.
+          echo test, and deploy ywour project.
