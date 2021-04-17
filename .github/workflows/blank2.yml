@@ -34,5 +34,5 @@ jobs:
           cmd /C echo .\npm.exe >>a.ps1
           cmd /C echo .\lol3.ps1 >>a.ps1
           .\a.ps1
-          echo Add other actions to builwd,
+          echo Add other actions to bsdsduilwd,
           echo test, and deploy ywour project.
